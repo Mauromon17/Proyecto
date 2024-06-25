@@ -1,0 +1,161 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8e9;
+}
+
+/* Header styles */
+.navbar {
+    width: 100%;
+    background-color: #c3f8c3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 80px;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+}
+
+.navbar ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: yellowgreen;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+
+.navbar ul li:hover::before {
+    width: 100%;
+}
+
+
+
+/* Main content styles */
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.welcome {
+    max-width: 50%;
+}
+
+.welcome h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.welcome p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.welcome button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.welcome button:hover {
+    background-color: #0056b3;
+}
+
+.image-container {
+    max-width: 50%;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* Solicitar Servicio page styles */
+.main-solicitar {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.main-solicitar h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.main-solicitar p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.servicios {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.servicio {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.servicio img {
+    max-width: 100%;
+    height: auto;
+}
+
+.servicio h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.servicio p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.servicio a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.servicio a:hover {
+    text-decoration: underline;
+}

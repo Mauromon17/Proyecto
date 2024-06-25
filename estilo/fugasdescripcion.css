@@ -1,0 +1,189 @@
+/* fuga_gas.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5f5;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header styles */
+
+.navbar {
+    width: 100%;
+    background-color: #c3f8c3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 80px;
+    cursor: pointer;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+}
+
+.navbar ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: yellowgreen;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+
+.navbar ul li:hover::before {
+    width: 100%;
+}
+
+
+/* Fin de Header styles */
+
+.main {
+    padding: 20px;
+}
+
+.main h1 {
+    color: #c0392b;
+    text-align: center;
+}
+
+.main section {
+    margin-bottom: 20px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto; /* Centrar la sección con márgenes automáticos */
+}
+
+.main section h2 {
+    color: #e74c3c;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 5px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #c0392b;
+}
+
+.gas {
+    text-align: center;
+    
+}
+
+.gas img {
+    width: 35%;
+    height: auto;
+}
+
+.descripcion-servicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.contenido {
+    flex: 1;
+}
+
+.imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    flex-shrink: 0;
+    margin: auto;
+}
+
+.imagen img {
+    max-width: 100%;
+    height: auto;
+}
+
+.proceso-trabajo .paso {
+    margin-bottom: 20px;
+}
+
+.proceso-trabajo .paso h3 {
+    color: #c0392b;
+}
+
+.proceso-trabajo .paso p {
+    margin-bottom: 10px;
+}
+
+.proceso-trabajo .paso .imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proceso-trabajo .paso .imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.beneficios-servicio {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.beneficios-servicio h2 {
+    grid-column: 1 / 3; /* Hace que el título ocupe todo el ancho */
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+.beneficios-servicio .contenido {
+    display: flex;
+    flex-direction: column;
+}
+
+.beneficios-servicio .imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.beneficios-servicio .imagen img {
+    max-width: 100%;
+    height: auto;
+}
