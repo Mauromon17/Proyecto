@@ -10,6 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $role = $_POST['role']; // El valor del select: 'trabajador' o 'cliente'
 
     try {
+        //cambio
         // Crear una conexión a la base de datos usando PDO
         $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
         // Configurar el modo de error de PDO para que lance excepciones
