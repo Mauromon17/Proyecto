@@ -3,14 +3,14 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "dinoservicios";
-
+//recordar forzar tipos
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $correo = $_POST['correo'];
     $contrasena = $_POST['contrasena'];
     $role = $_POST['role']; // El valor del select: 'trabajador' o 'cliente'
 
     try {
-        //cambio
+        //cerrar canales
         // Crear una conexión a la base de datos usando PDO
         $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
         // Configurar el modo de error de PDO para que lance excepciones

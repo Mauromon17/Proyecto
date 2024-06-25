@@ -32,9 +32,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bindParam(':contrasena', $hashed_password, PDO::PARAM_STR);
         $stmt->bindParam(':direccion', $direccion, PDO::PARAM_STR);
         
-        // Ejecutar la consulta
+    // Ejecutar la consulta
         $stmt->execute();
-
+    //cerrar conexion
         echo "Registro exitoso. Ahora puedes <a href='./iniciar.html'>iniciar sesión</a>.";
     } catch(PDOException $e) {
         echo "Error de conexión: " . $e->getMessage();
